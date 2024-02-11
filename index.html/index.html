@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: #3d3737;
+        color: #efe9e9;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      header {
+        background-color: #118da5;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 2px solid #d2d8de;
+        position: relative;
+      }
+      .logo {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        width: 100px;
+        height: auto;
+      }
+      .btn-container {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      .btn {
+        background-color: #0056b3;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .btn:hover {
+        background-color: #0f1112;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      nav ul li a:hover {
+        color: #31969d;
+      }
+      section {
+        background-color: #0a1647;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #007bff;
+      }
+      .portfolio-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .portfolio-item {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 5px rgba(208, 12, 12, 0.1);
+      }
+      .portfolio-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      footer {
+        background-color: #022448;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="kiologo.jpg" alt="Logo" class="logo" />
+        <div class="btn-container">
+         <a href="resume-kio.docx"></a> <button class="btn">Download CV</button>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about"><button class="btn">About</button></a></li>
+            <li><a href="#portfolio"><button class="btn">Skills</button></a></li>
+            <li><a href="#contact"><button class="btn">Contact</button></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <h2>Carlos Miguel Apolinar</h2>
+        <p>
+          I am an 18-year-old senior high school student, soon to turn 19 on
+          March 5th. I am passionate about several interests and activities that
+          enrich my life.I enjoy immersing myself in diverse mobile games, I
+          have a profound love for taking trips and exploring new places.
+          Whether it's a local hike in nature or a journey to a distant city, I
+          cherish the experiences and memories that come with each adventure.
+          Through my hobbies and interests, I strive to strike a balance between
+          exploration, leisure, and personal growth. They are not just pastimes
+          but integral parts of my identity, shaping who I am and guiding me
+          towards a fulfilling and meaningful life journey.
+        </p>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <h2>MY SKILLS</h2>
+        <div class="portfolio-items">
+          <div class="portfolio-item">
+            <img src="port2.jpg" alt="Project 1" />
+            <h3>JAVASCRIPT</h3>
+          </div>
+          <div class="portfolio-item">
+            <img src="port3.jpg" alt="Project 2" />
+            <h3>CSS</h3>
+            
+          </div>
+          <div class="portfolio-items">
+          <div class="portfolio-item">
+            <img src="port5.jpeg" alt="Project 1" />
+            <h3>HTML</h3>
+            
+          </div>
+          <div class="portfolio-item">
+            <img src="port6.png" alt="Project 2" />
+            <h3>PHP</h3>
+        
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for any inquiries or collaborations!</p>
+        <a href="mailto:apolinarkio887@gmail.com"><button class="btn">Email</button></a>
+        <a href="https://www.facebook.com/khio.kio.5/"> <button class="btn">Facebook</button></a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>The Technology of Tomorrow</p>
+        <p>&copy; 2024 My Portfolio</p>
+      </div>
+    </footer>
+  </body>
+</html>
